@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-*
-{
+* {
 	box-sizing: border-box;
 	font-family: "Helvetica", sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -11,47 +10,36 @@
           user-select: none;
 }
 
-body
-{
+body {
 	padding-top: 46px;
   height: 100%;
   width: 100%;
 	background-color: #000;
-
+	color: #fff;
 }
 
-section
-{
+section {
 	height: 80vh;
 	width: 100%;
 	max-height: 100%;
 	max-width: 100%;
 }
 
-#particles-js, .layer
-{
+#particles-js, .layer {
 	height: 100%;
 	width: 100%;
 	position: absolute;
 	pointer-events: auto !important;
 }
 
-#particles-js
-{
-	opacity: 1;
-}
-
-#landing
-{
+#landing {
 	height: 100vh;
 	overflow: hidden;
 	pointer-events: auto !important;
 }
 
 #landingTitle {
-  color: white;
-  font-size: 5em;
-  font-weight: 100;
+  font-size: 5rem;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -59,18 +47,25 @@ section
           transform: translate3d(-50%, -50%, 0);
 }
 
-.button
-{
-	color: white;
-  border: 1px solid white;
-  display: table;
-  position: absolute;
+#subTitle {
+	font-size: 2rem;
+	position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate3d(-50%, -50%, 0);
           transform: translate3d(-50%, -50%, 0);
+}
+
+.button {
+	color: white;
+  border: 1px solid white;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
   text-decoration: none;
-  transition: all 200ms ease;
+  transition: all 0.2s;
   padding: 10px 15px;
 }
 
@@ -80,8 +75,7 @@ section
 }
 
 /* Navbar styling */
-nav ul
-{
+nav ul {
 	list-style-type: none;
 	overflow: hidden;
 	position: fixed;
@@ -91,8 +85,7 @@ nav ul
 	z-index: 100;
 }
 
-nav ul li
-{
+nav ul li {
 	float: right;
 	display: block;
 	text-align: center;
@@ -100,29 +93,25 @@ nav ul li
 	font-size: 16px;
 }
 
-nav ul li.brand
-{
+nav ul li.brand {
 	float: left;
 }
 
-nav ul li:hover
-{
+nav ul li:hover {
 
 }
 
-nav a
-{
+nav a {
 	text-decoration: none;
 	color: #fff;
 }
 
-nav .icon
-{
+nav .icon {
 	display: none;
 }
 
-@media only screen and (max-width: 600px)
-{
+/* Responsive navbar code */
+@media only screen and (max-width: 600px) {
 	nav li:not(:first-child)
 	{
 		display: none;
@@ -135,9 +124,7 @@ nav .icon
 	}
 }
 
-/* Responsive navbar code */
-@media only screen and (max-width: 600px)
-{
+@media only screen and (max-width: 600px) {
 	nav.responsive
 	{
 		position: relative;
@@ -158,18 +145,3 @@ nav .icon
 	}
 }
 /* End navbar styling */
-
-.row
-{
-	background: #bb3f1f;
-}
-
-.col-3
-{
-	background-color: #c3a4eb;
-}
-
-.col-6
-{
-	background: #bdd42c;
-}
