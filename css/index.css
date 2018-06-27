@@ -4,38 +4,92 @@
 	box-sizing: border-box;
 	font-family: "Helvetica", sans-serif;
 	-webkit-font-smoothing: antialiased;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 body {
-	padding-top: 46px;
   height: 100%;
-  width: 100%;
+ 	width: 100%;
 	background-color: #000;
-	color: #fff;
+	color: #e7dfdd;
 }
 
-section {
-	height: 80vh;
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2.5em;
+	margin-bottom: 0.66em;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+p {
+	font-size: 1.25em;
+	line-height: normal;
+}
+
+#portfolio {
 	width: 100%;
-	max-height: 100%;
-	max-width: 100%;
+	height: 80vh;
+	position: relative;
+	margin-top: 5%;
+}
+
+#portfolio::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#portfolioImg {
+	background-image: url(../img/deleteYourself.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	filter: grayscale();
+	width: 85%;
+	height: 85%;
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	transition: all 0.3s;
+}
+
+#portfolioText {
+	position: absolute;
+	bottom: 20%;
+	right: 10%;
+	width: 25%;
+	background-color: rgba(42, 42, 42, 0.8);
+	padding: 20px;
+	transition: all 0.3s
+}
+
+#portfolioText a,
+#portfolioText a:visited {
+	display: inline-block;
+	border: 2px solid #333;
+	padding: 10px;
+	margin-top: 5%;
+	font-size: 1.25em;
+	float: right;
+	text-decoration: none;
+	color: #e7dfdd;
+	transition: all 0.3s;
+
 }
 
 #particles-js, .layer {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	pointer-events: auto !important;
 }
 
 #landing {
 	height: 100vh;
 	overflow: hidden;
-	pointer-events: auto !important;
 }
 
 #landingTitle {
@@ -47,8 +101,26 @@ section {
           transform: translate3d(-50%, -50%, 0);
 }
 
+#landing p {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	left: auto;
+	top: auto;
+	transition: all 0.2s;
+	background-image: -webkit-linear-gradient(left, #a239ca, #4717f6);
+	background-size: 0 40%;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+}
+
+#landing p:hover {
+	cursor: pointer;
+	background-size: 100% 40%;
+}
+
 #subTitle {
-	font-size: 2rem;
+	font-size: 2.5rem;
 	position: absolute;
   top: 50%;
   left: 50%;
@@ -58,20 +130,19 @@ section {
 
 .button {
 	color: white;
-  border: 1px solid white;
   position: absolute;
-  top: 70%;
+  top: 85%;
   left: 50%;
   -webkit-transform: translate3d(-50%, -50%, 0);
           transform: translate3d(-50%, -50%, 0);
   text-decoration: none;
-  transition: all 0.2s;
-  padding: 10px 15px;
+  padding: 16px 25px;
 }
 
 .button:hover {
-  background: white;
-  color: black;
+	color: #4717f6;
+	-webkit-animation: changeColor 2s linear infinite alternate;
+	        animation: changeColor 2s linear infinite alternate;
 }
 
 /* Navbar styling */
@@ -81,29 +152,34 @@ nav ul {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background-color: #000;
+	background: #000;
 	z-index: 100;
 }
 
-nav ul li {
+nav li {
 	float: right;
 	display: block;
 	text-align: center;
-	padding: 18px 20px;
-	font-size: 16px;
+	font-size: 1.15rem;
+	margin: 14px 16px;
 }
 
-nav ul li.brand {
+nav li.brand {
 	float: left;
-}
-
-nav ul li:hover {
-
 }
 
 nav a {
 	text-decoration: none;
-	color: #fff;
+	color: #e7dfdd;
+	background-image: -webkit-linear-gradient(left, #a239ca, #4717f6);
+	background-size: 0 40%;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	transition: all 0.2s;
+}
+
+nav a:hover {
+	background-size: 100% 40%;
 }
 
 nav .icon {
@@ -145,3 +221,110 @@ nav .icon {
 	}
 }
 /* End navbar styling */
+
+/* Portfolio navbar styling */
+#portfolioNav {
+	position: static;
+	top: auto;
+	width: 100%;
+}
+
+#portfolioNav ul {
+	position: static;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#portfolioNav li {
+	float: none;
+	display: inline-block;
+	margin: 10px 20px;
+}
+
+#portfolioNav button {
+	padding: 10px 30px;
+	border: none;
+	background-color: transparent;
+	color: #e7dfdd;
+	font-size: 1.25rem;
+	transition: all 0.3s;
+	background-image: -webkit-linear-gradient(left, #a239ca, #4717f6);
+	background-size: 0 5%;
+	background-position: 50% 100%;
+	background-repeat: no-repeat;
+	outline: none;
+}
+
+#portfolioNav button:hover:not(.current),
+#portfolioNav button.current {
+	cursor: pointer;
+	transform: scale(1.25);
+	background-size: 100% 5%;
+	color: #fff;
+}
+
+/* End portfolio navbar styling */
+
+/* Classes for addClass function in js */
+#portfolioImg.hover {
+	filter: none;
+}
+
+#portfolioText.hover {
+	background-color: #4717f6;
+}
+
+#portfolioText a.hover {
+	border-color: #e7dfdd;
+}
+
+#landing p.noInteraction:hover {
+	cursor: default;
+	background-size: 0;
+}
+
+/* End onhover styling */
+
+footer {
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 10%;
+	margin-bottom: 2%;
+}
+
+footer div {
+	margin: 2%;
+}
+
+footer i {
+	color: #4717f6;
+	margin: 0 10px;
+	transition: all 0.2s;
+}
+
+footer i:hover {
+	color: #a239ca;
+}
+
+@-webkit-keyframes changeColor {
+	0% {
+		color: #e7dfdd;
+	}
+  50% {
+    color: #a239ca;
+  }
+  100% {
+    color: #4717f6;
+  }
+}
+@keyframes changeColor {
+	0% {
+		color: #e7dfdd;
+	}
+  50% {
+    color: #a239ca;
+  }
+  100% {
+    color: #4717f6;
+  }
+}
