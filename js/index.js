@@ -42,7 +42,7 @@ $(document).ready(function() {
 		if(this.hash !== "") {
 			var hash = this.hash;
 			$("html, body").animate({
-				scrollTop: $(hash).offset().top - 60
+				scrollTop: $(hash).offset().top - 75
 			}, 800);
 		}
 	});
