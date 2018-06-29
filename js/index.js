@@ -37,9 +37,6 @@ var parallaxInstance = new Parallax(parallax, {
 	hoverOnly: true
 });
 
-console.log(window.location.pathname);
-console.log(window.location.href);
-
 $(document).ready(function() {
 	$("a").click(function() {
 		if(this.hash !== "") {
@@ -65,7 +62,7 @@ $(document).ready(function() {
 			image.attr("src", "img/" + portfolioItems[index].img);
 			title.text(portfolioItems[index].title);
 			description.text(portfolioItems[index].desc);
-			url.attr("href", portfolioItems[index].url)
+			url.attr("href", window.location.origin + portfolioItems[index].url)
 			portfolio.fadeIn(200);
 		});
 	});
