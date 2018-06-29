@@ -44,16 +44,15 @@ p {
 	clear: both;
 }
 
-#portfolioImg {
-	background-image: url(../img/deleteYourself.png);
-	background-repeat: no-repeat;
-	background-size: contain;
+#imgContainer  {
+	max-width: 75%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#imgContainer img {
+	max-width: 100%;
 	filter: grayscale();
-	width: 85%;
-	height: 85%;
-	position: absolute;
-	top: 10%;
-	left: 5%;
 	transition: all 0.3s;
 }
 
@@ -62,7 +61,7 @@ p {
 	bottom: 20%;
 	right: 10%;
 	width: 25%;
-	background-color: rgba(42, 42, 42, 0.8);
+	background-color: rgba(30, 30, 30, 0.8);
 	padding: 20px;
 	transition: all 0.3s
 }
@@ -266,7 +265,11 @@ nav .icon {
 /* End portfolio navbar styling */
 
 /* Classes for addClass function in js */
-#portfolioImg.hover {
+#imgContainer img.hover {
+	filter: none;
+}
+
+#portfolio img.hover {
 	filter: none;
 }
 
