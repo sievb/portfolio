@@ -8,7 +8,7 @@ particlesJS('intro', {
       }
     },
     "color": {
-      "value": ["#e7dfdd", "#4717f6", "#a239ca"]
+      "value": ["#f1f1f1", "#4717f6", "#a239ca"]
     },
     "shape": {
       "type": "circle",

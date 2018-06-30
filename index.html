@@ -1,69 +1,55 @@
 <!doctype html>
-<html>
-<head>
-	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Benjamin Siev</title>
-		<link href = "css/reset.css" type = "text/css" rel = "stylesheet"/>
-		<link rel="stylesheet" href="css/fontawesome/fontawesome-all.css">
-		<link href = "css/index.css" type = "text/css" rel = "stylesheet"/>
-	</head>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjamin Siev</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
 <body>
+  <div class="sticky" data-sticky-container data-sticky data-options="marginTop:0; stickyOn:small;">
+    <div class="title-bar" data-responsive-toggle="navbar">
+      <button class="menu-icon" type="button" data-toggle="navbar"></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
 
-<nav id="mainNav">
-	<ul>
-		<li class="brand"><a href="#landing">Benjamin Siev</a></li>
-		<li><a href="#about">About</a></li>
-		<li><a href="#portfolio">Portfolio</a></li>
-	</ul>
-</nav>
+    <div class="top-bar" id="navbar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li><a href="#">Benjamin Siev</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="http://benjaminsiev.me/about">About</a></li>
+        <ul>
+      </div>
+    </div>
+  </div>
+  <section id="landing">
+  	<div class="layer" data-depth="0.4">
+  		<h1 id="landingTitle">Benjamin Siev</h1>
+  	</div>
 
-<section id="landing">
-	<div class="layer" data-depth="0.4">
-		<h1 id="landingTitle">Benjamin Siev</h1>
-	</div>
+  	<div class="layer" data-depth="0.3">
+  		<h2 id="subTitle">Subtitle</h2>
+  	</div>
 
-	<div class="layer" data-depth="0.3">
-		<h2 id="subTitle">Subtitle</h2>
-	</div>
+  	<div class="layer" data-depth="0">
+  		<div id="particles-js"></div>
+  		<a class="button large" href="#portfolio">See my work</i></a>
+  		<p>Click to disable parallax</p>
+  	</div>
+  </section>
 
-	<div class="layer" data-depth="0">
-		<div id="particles-js"></div>
-		<a class="button" href="#portfolio"><i class="fas fa-angle-down fa-3x"></i></a>
-		<p>Click to disable parallax</p>
-	</div>
-</section>
-
-<section id="portfolio">
-	<div id="imgContainer">
-		<img src="img/deleteYourself.png">
-	</div>
-	<div id="portfolioText">
-		<h2>Delete Yourself</h2>
-		<p>A website dedicated to helping visitors practice good online habits, as well as taking control of their online presence</p>
-		<a href="http://benjaminsiev.me/pages/delete.html">Read more</a>
-	</div>
-</section>
-
-<nav id="portfolioNav">
-	<ul>
-		<li><button class="current">1</button></li>
-		<li><button>2</button></li>
-		<li><button>3</button></li>
-	</ul>
-</nav>
-
-<footer>
-	<div>
-		<a href="mailto:benjaminsiev@gmail.com"><i class="far fa-envelope fa-2x"></i></a>
-		<a href="www.linkedin.com/in/benjamin-siev"><i class="fab fa-linkedin-in fa-2x"></i></a>
-	</div>
-	<p>	&#169; 2018 by Benjamin Siev</p>
-</footer>
-
-<script src="js/jquery-3.3.1.js"></script>
-<script src="js/particles/particles.min.js" charset="utf-8"></script>
-<script src="js/parallax/parallax.min.js" charset="utf-8"></script>
-<script src="js/particles/particleOptions.js" charset="utf-8"></script>
-<script src="js/index.js" charset="utf-8"></script>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/particles/particles.min.js"></script>
+  <script src="js/particles/particleOptions.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
