@@ -121,6 +121,16 @@ body {
   font-size: 1.4em;
 }
 
-.cell {
-  background-color: #eb055e;
+.contact {
+  text-align: center;
+}
+
+.contact a {
+  margin: 0 0.6rem;
+  transition: all 0.2s;
+  color: #4717f6;
+}
+
+.contact a:hover {
+  color: #a239ca;
 }
