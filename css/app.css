@@ -123,10 +123,11 @@ body {
 
 .contact {
   text-align: center;
+  margin-top: 3rem;
 }
 
 .contact a {
-  margin: 0 0.6rem;
+  margin: 0.6rem;
   transition: all 0.2s;
   color: #4717f6;
 }
