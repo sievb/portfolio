@@ -39,35 +39,6 @@ $(document).ready(function() {
 		}
 	});
 
-	buttons.click(function() {
-		var index = buttons.index(this);
-		var portfolio = $("#portfolio");
-		var image = $("#imgContainer img");
-		var title = $("#portfolio h2");
-		var description = $("#portfolio p");
-		var url = $("#portfolio a");
-
-		$("button.current").removeClass("current");
-		$(this).addClass("current");
-
-		portfolio.fadeOut(200, function() {
-			image.attr("src", "img/" + portfolioItems[index].img);
-			title.text(portfolioItems[index].title);
-			description.text(portfolioItems[index].desc);
-			url.attr("href", window.location.origin + portfolioItems[index].url)
-			portfolio.fadeIn(200);
-		});
-	});
-
-	$("#imgContainer").change(function() {
-		var selected = $(this).val();
-		var image = $("#imgContainer img");
-		image.fadeOut("fast", function() {
-			image.attr('src', "img/" + portfolioItems[index].img);
-			image.fadeIn("fast");
-		});
-	})
-
 	$("#landing p").click(function() {
 		parallaxInstance.destroy();
 		$(this).text("Parallax disabled");
