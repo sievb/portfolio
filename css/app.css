@@ -135,3 +135,7 @@ body {
 .contact a:hover {
   color: #a239ca;
 }
+
+#portfolio {
+  margin-top: 2rem auto;
+}
