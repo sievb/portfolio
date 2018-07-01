@@ -134,3 +134,7 @@ body {
 .contact a:hover {
   color: #a239ca;
 }
+
+#portfolio {
+  height: 100vh;
+}
