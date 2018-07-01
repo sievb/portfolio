@@ -41,10 +41,45 @@
 
   	<div class="layer" data-depth="0">
   		<div id="particles-js"></div>
-  		<a class="button large" href="#portfolio">See my work</i></a>
+  		<a class="button" href="#portfolio">See my work</i></a>
   		<p>Click to disable parallax</p>
   	</div>
   </section>
+
+  <div class="grid-x grid-margin-x">
+    <div class="cell small-4 large-offset-2"></div>
+    <div class="cell small-4"></div>
+  </div>
+
+  <div id="portfolio" class="orbit" role="region" aria-label="Portfolio Items" data-orbit data-auto-play="false">
+    <ul class="orbit-container">
+      <li class="orbit-slide is-active">
+        <div class="grid-x">
+          <div class="cell large-10 float-center">
+            <figure class="orbit-figure">
+              <img class="orbit-image" src="img/deleteYourself.png">
+            </figure>
+          </div>
+        </div>
+      </li>
+
+      <li class="orbit-slide">
+        <div class="grid-x">
+          <div class="cell medium-6 large-10 float-center">
+            <figure class="orbit-figure">
+              <img class="orbit-image" src="img/zoldo.png">
+            </figure>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+      <nav class="orbit-bullets">
+        <button class="is-active" data-slide="0">1</button>
+        <button data-slide="1">2</button>
+        <button data-slide="2">3</button>
+      </nav>
+  </div>
 
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/what-input.js"></script>

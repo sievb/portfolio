@@ -34,7 +34,7 @@ $(document).ready(function() {
 		if(this.hash !== "") {
 			var hash = this.hash;
 			$("html, body").animate({
-				scrollTop: $(hash).offset().top - 75
+				scrollTop: $(hash).offset().top - 50
 			}, 800);
 		}
 	});
