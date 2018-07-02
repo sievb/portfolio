@@ -45,9 +45,9 @@ $(document).ready(function() {
 		$(this).addClass("noInteraction")
 	});
 
-	$("#portfolioText a").hover(function() {
-		$("#portfolioText").toggleClass("hover");
-		$("#portfolio img").toggleClass("hover");
+	$(".orbit-caption a").hover(function() {
+		$(".orbit-image").toggleClass("hover");
+		$(".orbit-caption").toggleClass("hover");
 		$(this).toggleClass("hover");
 	})
 });
