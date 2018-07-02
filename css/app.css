@@ -148,9 +148,6 @@ body {
 }
 
 .orbit-caption {
-  width: 25%;
-  right: 10%;
-  bottom: 10%;
   background-color: rgba(30, 30, 30, 0.8);
   transition: all 0.3s;
 }
@@ -190,4 +187,38 @@ body {
 
 .orbit-caption .button.hover {
   border-color: #fff;
+}
+
+@media screen and (max-width: 39.9375em) {
+  html {
+    font-size: 14px;
+  }
+
+  .orbit-caption {
+    right: 0;
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  html {
+    font-size: 16px;
+  }
+
+  .orbit-caption {
+    right: 0;
+    width: 33%;
+    bottom: 10%;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  html {
+    font-size: 20px;
+  }
+
+  .orbit-caption {
+    width: 25%;
+    right: 10%;
+  }
 }
