@@ -1,0 +1,46 @@
+html {
+  font-size: 20px;
+}
+
+#intro {
+  background-color: #030105;
+  color: #eee;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+}
+
+#intro h1 {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  margin-bottom: 0;
+}
+
+section > div {
+  position: absolute;
+  top: 50%;
+}
+
+div > div {
+  position: relative;
+}
+
+span {
+  text-decoration: underline;
+  font-size: 1.25rem;
+  color: #c98fff;
+  font-weight: bold;
+}
+
+li {
+  list-style-type: none;
+}
+
+#projDetails p {
+  margin-bottom: 3rem;
+}
+
+span #listTitle {
+  margin: 0;
+}
