@@ -46,23 +46,8 @@ p {
   margin-bottom: 0;
 }
 
-li {
-  list-style-type: none;
-}
-
+/* Scroll past landing page style */
 body.light {
   background-color: #eee;
   color: #030105;
-}
-
-@media screen and (max-width: 39.9375em) {
-
-}
-
-@media screen and (min-width: 40em) {
-
-}
-
-@media screen and (min-wdith: 64em) {
-
 }
