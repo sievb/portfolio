@@ -32,13 +32,13 @@ div > div {
   margin-bottom: 3rem;
 }
 
-span {
+.bold {
   text-decoration: underline;
   color: #c98fff;
   font-weight: bold;
 }
 
-.projType p {
+#projType {
   margin-bottom: 3rem;
 }
 
@@ -50,4 +50,15 @@ p {
 body.light {
   background-color: #eee;
   color: #030105;
+}
+
+
+@media screen and (max-width: 39.9375em) {
+  #intro h1 {
+    top: 10%;
+  }
+
+  #intro > div {
+    top: 25%;
+  }
 }
