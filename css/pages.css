@@ -12,6 +12,7 @@ body {
   height: 100vh;
   width: 100vw;
   max-width: 100%;
+  margin-bottom: 3rem;
 }
 
 #intro h1 {
@@ -62,5 +63,5 @@ body.light {
 }
 
 @media screen and (min-wdith: 64em) {
-  
+
 }
