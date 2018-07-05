@@ -2,8 +2,11 @@ html {
   font-size: 20px;
 }
 
-#intro {
+body {
   background-color: #030105;
+}
+
+#intro {
   color: #eee;
   height: 100vh;
   width: 100vw;
@@ -17,7 +20,7 @@ html {
   margin-bottom: 0;
 }
 
-section > div {
+#intro > div {
   position: absolute;
   top: 50%;
 }
@@ -28,19 +31,36 @@ div > div {
 
 span {
   text-decoration: underline;
-  font-size: 1.25rem;
   color: #c98fff;
   font-weight: bold;
+}
+
+.projType p {
+  margin-bottom: 3rem;
+}
+
+p {
+  margin-bottom: 0;
 }
 
 li {
   list-style-type: none;
 }
 
-#projDetails p {
-  margin-bottom: 3rem;
+@media screen and (max-width: 39.9375em) {
+  html {
+    font-size: 16px;
+  }
 }
 
-span #listTitle {
-  margin: 0;
+@media screen and (min-width: 40em) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  html {
+    font-size: 20px;
+  }
 }
