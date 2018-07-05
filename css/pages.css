@@ -46,21 +46,3 @@ p {
 li {
   list-style-type: none;
 }
-
-@media screen and (max-width: 39.9375em) {
-  html {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width: 40em) {
-  html {
-    font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 64em) {
-  html {
-    font-size: 20px;
-  }
-}
