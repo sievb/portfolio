@@ -29,6 +29,7 @@ body {
 
 div > div {
   position: relative;
+  margin-bottom: 3rem;
 }
 
 span {
