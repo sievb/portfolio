@@ -7,6 +7,11 @@ body {
   color: #eee;
 }
 
+#portfolio {
+  margin-top: 6rem;
+}
+
+/* Landing page styling */
 #particles-js, .layer {
 	height: 100%;
 	width: 100%;
@@ -72,6 +77,7 @@ body {
   background-color: #4717f6;
 }
 
+/* Navbar styling */
 .top-bar,
 .top-bar ul {
   background-color: #030105;
@@ -98,6 +104,23 @@ body {
   color: #fff;
 }
 
+/* Footer styling */
+.contact {
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.contact a {
+  margin: 0.6rem;
+  transition: all 0.2s;
+  color: #4717f6;
+}
+
+.contact a:hover {
+  color: #c98fff;
+}
+
+/* Image slider styling */
 .orbit-bullets button {
   border-radius: 0;
   transition: all 0.3s;
@@ -121,25 +144,6 @@ body {
   color: #fff;
   cursor: pointer;
   transform: scale(1.1);
-}
-
-.contact {
-  text-align: center;
-  margin-top: 8rem;
-}
-
-.contact a {
-  margin: 0.6rem;
-  transition: all 0.2s;
-  color: #4717f6;
-}
-
-.contact a:hover {
-  color: #c98fff;
-}
-
-#portfolio {
-  margin-top: 6rem;
 }
 
 .orbit-image {

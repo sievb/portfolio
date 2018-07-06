@@ -25,9 +25,10 @@ body {
 #intro > div {
   position: absolute;
   top: 50%;
+  width: 100%;
 }
 
-div > div {
+#projLeft {
   position: relative;
   margin-bottom: 3rem;
 }
@@ -44,6 +45,57 @@ div > div {
 
 p {
   margin-bottom: 0;
+}
+
+.italics {
+  font-style: italic;
+}
+
+/* Navbar styling */
+.top-bar,
+.top-bar ul {
+  background-color: #030105;
+}
+
+.menu li {
+  padding: 0.2rem 0.4rem;
+}
+
+.menu a {
+  color: #eee;
+  background-image: -webkit-linear-gradient(left, #c98fff, #4717f6);
+	background-size: 0 40%;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	transition: all 0.2s;
+  padding: 0;
+}
+
+.menu a:hover,
+.menu a:focus {
+  background-size: 100% 40%;
+  background-color: transparent;
+  color: #fff;
+}
+
+/* Footer styling */
+.contact {
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.contact p {
+  margin-bottom: 1rem;
+}
+
+.contact a {
+  margin: 0.6rem;
+  transition: all 0.2s;
+  color: #4717f6;
+}
+
+.contact a:hover {
+  color: #c98fff;
 }
 
 /* Scroll past landing page style */

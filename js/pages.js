@@ -1,3 +1,4 @@
+$(document).foundation()
 $(document).ready(function () {
     window.addEventListener("scroll", function() {
       if (window.scrollY > 600) {
