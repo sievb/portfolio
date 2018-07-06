@@ -33,18 +33,56 @@ body {
   margin-bottom: 3rem;
 }
 
+#projLeft p {
+  margin-bottom: 0;
+}
+
+p#projType {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+.divider {
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+  background-image: -webkit-linear-gradient(left, #9a2eff, #4717f6);
+  background-size: 100% 15%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.divider span {
+  background-color: #030105;
+  color: #eee;
+  padding: 0 1rem;
+  transition: all 0.3s;
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid #333;
+  transition: all 0.3s;
+  margin-top: 1rem;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #4717f6;
+  border-color: #fff;
+}
+
+/* Span classes */
 .bold {
-  text-decoration: underline;
   color: #9A2EFF;
   font-weight: bold;
 }
 
-#projType {
-  margin-bottom: 3rem;
-}
-
-p {
-  margin-bottom: 0;
+.underline {
+  text-decoration: underline;
 }
 
 .italics {
@@ -61,13 +99,16 @@ p {
   padding: 0.2rem 0.4rem;
 }
 
-.menu a {
+a {
   color: #eee;
   background-image: -webkit-linear-gradient(left, #9A2EFF, #4717f6);
 	background-size: 0 40%;
 	background-position: 0 100%;
 	background-repeat: no-repeat;
-	transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.menu a {
   padding: 0;
 }
 
@@ -99,11 +140,11 @@ p {
 }
 
 /* Scroll past landing page style */
-body.light {
+body.light,
+.divider span.light {
   background-color: #eee;
   color: #030105;
 }
-
 
 @media screen and (max-width: 39.9375em) {
   #intro h1 {
