@@ -35,7 +35,7 @@ body {
 
 .bold {
   text-decoration: underline;
-  color: #c98fff;
+  color: #9A2EFF;
   font-weight: bold;
 }
 
@@ -63,7 +63,7 @@ p {
 
 .menu a {
   color: #eee;
-  background-image: -webkit-linear-gradient(left, #c98fff, #4717f6);
+  background-image: -webkit-linear-gradient(left, #9A2EFF, #4717f6);
 	background-size: 0 40%;
 	background-position: 0 100%;
 	background-repeat: no-repeat;
@@ -95,7 +95,7 @@ p {
 }
 
 .contact a:hover {
-  color: #c98fff;
+  color: #9A2EFF;
 }
 
 /* Scroll past landing page style */
