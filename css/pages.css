@@ -28,16 +28,17 @@ body {
   width: 100%;
 }
 
-#projLeft {
+#projDetails {
   position: relative;
   margin-bottom: 3rem;
 }
 
-#projLeft p {
+#projDetails p {
   margin-bottom: 0;
 }
 
-p#projType {
+#projType p:first-of-type,
+#projType p:last-of-type {
   margin-bottom: 3rem;
 }
 
@@ -153,5 +154,15 @@ body.light,
 
   #intro > div {
     top: 25%;
+  }
+
+  .divider {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 39em) {
+  .divider {
+    font-size: 1.5rem;
   }
 }
