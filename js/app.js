@@ -20,10 +20,4 @@ $(document).ready(function() {
 		$(this).text("Parallax disabled");
 		$(this).addClass("noInteraction")
 	});
-
-	$(".orbit-caption a").hover(function() {
-		$(".orbit-image").toggleClass("hover");
-		$(".orbit-caption").toggleClass("hover");
-		$(this).toggleClass("hover");
-	})
 });

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjamin Siev | Pocket Husky</title>
+    <link rel="stylesheet" href="../css/foundation.css">
+    <link rel="stylesheet" href="../css/fontawesome/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../css/pages.css">
+  </head>
+  <body>
+    <div class="sticky" data-sticky-container data-sticky data-options="marginTop:0; stickyOn:small;">
+      <div class="title-bar" data-responsive-toggle="navbar">
+        <button class="menu-icon" type="button" data-toggle="navbar"></button>
+        <div class="title-bar-title">Menu</div>
+      </div>
+
+      <div class="top-bar" id="navbar">
+        <div class="top-bar-left">
+          <ul class="menu">
+            <li><a href="http://benjaminsiev.me">Benjamin Siev</a></li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu">
+            <li><a href="http://benjaminsiev.me/#portfolio">Portfolio</a></li>
+            <li><a href="http://benjaminsiev.me/pages/about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section id="intro" class="grid-x">
+        <h1 class="cell small-8 small-offset-1 medium-offset-3 medium-6">PocketHusky</h1>
+        <div id="projDetails" class="grid-x">
+          <div id="projType" class="cell small-4 small-offset-1 medium-2 medium-offset-3">
+            <p><span class="bold underline">Group Project</span></p>
+            <p><span class="bold underline">My Role</span></p>
+            <p>Developer</p>
+            <p>Writer</p>
+          </div>
+
+          <div class="cell small-10 small-offset-1 medium-5 medium-offset-0">
+            <p>A fun mobile app to encourage students to explore and learn about what is on the UW Bothell campus</p>
+            <div>
+              <a class="button" href="http://students.washington.edu/rice74/pocket-husky-website/">Visit website</a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="grid-x">
+      <div class="cell medium-9 float-center">
+        <h2><span class="bold">Purpose</span></h2>
+        <p><span class="italics">Pocket Husky</span> was a group project that spanned two quarters starting in winter quarter of 2016. The class was designed to be more like a studio class and free reign was given over what students wanted to work on, given that it related to a social issue. My group decided on student engagement and awareness on campus as the main focus for our project.</p>
+
+        <h2><span class="bold">Development</span></h2>
+        <p>From the idea of student awareness we listed off ideas on what the project itself would be, eventually we agreed upon the goal of developing an app that would encourage students to walk around campus and inform them about the services available. I was in charge of creating an overlay for the Google Maps API so it would have more clarity and cohesiveness than satellite imagery, and making sure we could access the user's coordinates while the app was open. Accessing the phone's coordinates was simple, and I discovered that it could detect the elevation, however, there was a wide margin of accuracy which meant the group needed to rethink the aspects of the app that relied on precise location information. Figuring out how to overlay images on top of the Google Map satellite image took a majority of development time, mainly due to the fact that I was still new to JavaScript and coding in general. Once all the images were properly aligned I enabled the viewing of the different floors by disabling the overlays of all the other floors except whichever was currently selected.</p>
+
+        <h2><span class="bold">Outcome</span></h2>
+        <p>At the start of this project I only had a quarter's worth of web development knowledge, which only introduced JavaScript near the end. This meant that I had to learn alongside reading the Google Maps API to get the desired outcome, it was a combination of having difficulty understanding the API documentation due to my lack of JavaScript understanding, as well as the API just not being able to perform the task I wanted it to. Although, it was very encouraging to have it work in the end and have everyone's hard work pay off, even if not everything we wanted was included in the final version. This experience helped show me how much JavaScript could do and that I needed to keep working with it in order to understand and get better at it.</p>
+      </div>
+    </section>
+
+    <div class="contact grid-x">
+      <div class="float-center">
+      	<div>
+      		<a href="mailto:benjaminsiev@gmail.com"><i class="far fa-envelope fa-2x"></i></a>
+      		<a href="https://www.linkedin.com/in/benjamin-siev"><i class="fab fa-linkedin-in fa-2x"></i></a>
+      	</div>
+      	<p>	&#169; 2018 by Benjamin Siev</p>
+      </div>
+    </div>
+
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/vendor/what-input.js"></script>
+  <script src="../js/vendor/foundation.js"></script>
+  <script src="../js/particles/particles.min.js" charset="utf-8"></script>
+  <script src="../js/particles/pagesParticleOptions.js" charset="utf-8"></script>
+  <script src="../js/pages.js" charset="utf-8"></script>
+  </body>
+</html>

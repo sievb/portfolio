@@ -7,6 +7,7 @@
     <title>Benjamin Siev</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/fontawesome/fontawesome-all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
   </head>
 <body>
@@ -25,7 +26,7 @@
       <div class="top-bar-right">
         <ul class="menu">
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="http://benjaminsiev.me/pages/about">About</a></li>
+          <li><a href="http://benjaminsiev.me/pages/about.html">About</a></li>
         </ul>
       </div>
     </div>
@@ -47,47 +48,42 @@
   	</div>
   </section>
 
-  <div id="portfolio" class="orbit" role="region" aria-label="Portfolio Items" data-orbit data-auto-play="false">
-    <ul class="orbit-container">
-      <li class="orbit-slide is-active">
-        <div class="grid-x">
-          <div class="cell large-9 float-center">
-            <figure class="orbit-figure">
-              <img class="orbit-image" src="img/deleteYourself.png">
-              <figcaption class="orbit-caption">
-                <h3>Delete Yourself</h3>
-                <p>A website dedicated to helping visitors practice good online habits, as well as taking control of their online presence</p>
-                <div>
-                  <a class="button" href="http://benjaminsiev.me/pages/delete.html"></a>
-                </div>
-              </figcaption>
-            </figure>
+  <div id="portfolio" class="grid-x">
+    <div class="cell large-6 container">
+      <a href="http://benjaminsiev.me/pages/delete.html">
+        <img src="img/deleteYourself(macbook).jpg">
+        <div class="overlay">
+          <div class="text">
+            <h4>Delete Yourself</h4>
+            <h6>- web development</h6>
           </div>
         </div>
-      </li>
+      </a>
+    </div>
 
-      <li class="orbit-slide">
-        <div class="grid-x">
-          <div class="cell medium-6 large-9 float-center">
-            <figure class="orbit-figure">
-              <img class="orbit-image" src="img/zoldo.png">
-              <figcaption class="orbit-caption">
-                <h3>Fable of Zoldo</h3>
-                <p>A Legend of Zelda parody that attempts to get players to question why they play games by introducing absurdist aspects</p>
-                <div>
-                  <a class="button" href="http://benjaminsiev.me/pages/zoldo.html"></a>
-                </div>
-              </figcaption>
-            </figure>
+    <div class="cell large-6 container">
+      <a href="http://benjaminsiev.me/pages/husky.html">
+        <img src="img/pocketHusky.jpg">
+        <div class="overlay">
+          <div class="text">
+            <h4>Pocket Husky</h4>
+            <h6>- javascript development, technical writing</h6>
           </div>
         </div>
-      </li>
-    </ul>
+      </a>
+    </div>
 
-      <nav class="orbit-bullets">
-        <button class="is-active" data-slide="0">1</button>
-        <button data-slide="1">2</button>
-      </nav>
+    <div class="cell large-6 container">
+      <a href="http://benjaminsiev.me/pages/zoldo.html">
+        <img src="img/zoldo.png">
+        <div class="overlay">
+          <div class="text">
+            <h4>Fable of Zoldo</h4>
+            <h6>- art design</h6>
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
 
   <div class="contact grid-x">

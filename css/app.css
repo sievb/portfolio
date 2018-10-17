@@ -5,10 +5,16 @@ html {
 body {
   background-color: #030105;
   color: #eee;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 #portfolio {
-  margin-top: 6rem;
+  width: 95vw;
+  margin: 0 auto;
 }
 
 /* Landing page styling */
@@ -61,6 +67,7 @@ body {
   width: 75%;
   text-align: center;
   font-size: 1.75rem;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 #landingButton {
@@ -80,6 +87,14 @@ body {
 #landingButton:hover {
 	color: #eee;
   background-color: #4717f6;
+}
+
+section {
+  margin-bottom: 15vh;
+}
+
+.text h6 {
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /* Navbar styling */
@@ -125,94 +140,13 @@ body {
   color: #9A2EFF;
 }
 
-/* Image slider styling */
-.orbit-bullets button {
-  border-radius: 0;
-  transition: all 0.3s;
-	background-image: -webkit-linear-gradient(left, #9A2EFF, #4717f6);
-	background-size: 0 5%;
-	background-position: 50% 100%;
-	background-repeat: no-repeat;
-  background-color: transparent;
-  color: #eee;
-  height: 2rem;
-  width: 4rem;
-  margin: 0.5rem;
-  padding: 0 1rem;
-  font-size: 1.25em;
-}
-
-.orbit-bullets button:hover,
-.orbit-bullets button.is-active {
-  background-size: 100% 5%;
-  background-color: transparent;
-  color: #fff;
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-.orbit-image {
-  filter: grayscale();
-  transition: all 0.3s;
-}
-
-.orbit-caption {
-  background-color: rgba(30, 30, 30, 0.8);
-  transition: all 0.3s;
-}
-
-.orbit-caption p {
-  line-height: 1.3;
-  transition: all 0.3s;
-}
-
-.orbit-caption a {
-  transition: all 0.3s;
-}
-
-.orbit-caption a::after {
-  content: "Read more";
-}
-
-.orbit-caption .button {
-  background-color: transparent;
-  border: 2px solid #333;
-}
-
-.orbit-caption .button,
-.orbit-caption h3,
-.orbit-caption p {
-  margin: 0;
-}
-
-/* Hover styles for javascript */
-.orbit-image.hover {
-  filter: none;
-}
-
-.orbit-caption.hover {
-  background-color: #4717f6;
-}
-
-.orbit-caption .button.hover {
-  border-color: #fff;
-}
-
 @media screen and (max-width: 39.9375em) {
   html {
     font-size: 16px;
   }
 
-  .orbit-caption {
-    position: relative;
-  }
-
-  .orbit-caption div {
-    text-align: right;
-  }
-
   #subTitle {
-     font-size: 1.25rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -220,25 +154,43 @@ body {
   html {
     font-size: 18px;
   }
-
-  .orbit-caption {
-    right: 0;
-    width: 33%;
-    bottom: 10%;
-  }
-
-  .orbit-caption div {
-    text-align: right;
-  }
 }
 
 @media screen and (min-width: 64em) {
   html {
     font-size: 20px;
   }
+}
 
-  .orbit-caption {
-    width: 25%;
-    right: 10%;
-  }
+.container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #4717f6;
+}
+
+.container:hover .overlay {
+  opacity: 0.9;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  bottom: 2rem;
+  right: 2.5rem;
+  text-align: right;
+}
+
+.text h6 {
+  font-style: italic;
 }
