@@ -1,0 +1,112 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #fcfcfc;
+  transition: background-image 0.2s ease;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.nameDiv {
+  display: inline-block;
+  margin-left: 20vw;
+  margin-top: 5vh;
+}
+
+.nameDiv h1 {
+  font-size: 3.5em;
+}
+
+.nameDiv h2 {
+  font-size: 1.75em;
+  float: right;
+}
+
+.nameDiv h1, h2 {
+  margin: 0.25em 0em;
+}
+
+.nameDiv a {
+  float: right;
+}
+
+.portfolio {
+  font-size: 1.75em;
+  width: 75%;
+  margin: 13vh auto;
+}
+
+a {
+  font-weight: bold;
+  color: #9A2EFF;
+  background-image: -webkit-linear-gradient(left, #9A2EFF 0%, #9A2EFF 100%);
+  border-bottom: 3px solid #9A2EFF;
+  transition: all 0.2s;
+  background-size: 100% 0;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fcfcfc;
+  background-size: 100% 100%;
+}
+
+.caption {
+  font-size: 1.75em;
+  margin: auto 2em;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer div {
+  display: inline-block;
+  margin: 0 2em;
+}
+
+.footer div a {
+  font-size: 1.25em;
+}
+
+.smallCaps {
+  font-variant: small-caps;
+}
+
+@media screen and (max-width: 39.9375em) {
+  html {
+    font-size: 16px;
+  }
+
+  .nameDiv {
+    margin: 5vw;
+  }
+
+  .nameDiv h2, .nameDiv a {
+    float: none;
+  }
+
+  .portfolio {
+    width: 90%;
+    margin: 10vw auto;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  html {
+    font-size: 20px;
+  }
+}
