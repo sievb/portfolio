@@ -12,6 +12,30 @@ p {
   margin: 0.5em 0;
 }
 
+.nav {
+  margin: 0;
+  padding: 0;
+  width: 5%;
+  position: fixed;
+}
+
+.nav a {
+  display: block;
+  padding: 0.5em;
+  border: none;
+  color: #999999;
+  background-image: none;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #636363
+}
+
+.nav .icon {
+  display: none;
+}
+
 .nameDiv {
   display: inline-block;
   margin-left: 20vw;
@@ -115,6 +139,25 @@ a:hover {
   .column {
     width: 100%;
     padding: 0;
+  }
+
+  .nav a:not(:first-child) {
+    display: none;
+  }
+
+  .nav a.icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .nav.responsive {
+    position: relative;
+  }
+
+  .nav.responsive a {
+    display: block;
+    text-align: left;
   }
 }
 
