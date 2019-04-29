@@ -284,6 +284,7 @@ footer {
   .nextLink div {
     margin: auto 2.5%; }
   .nextLink p {
-    text-decoration: underline; }
+    text-decoration: underline;
+    font-size: 1.15em; }
 
 /*# sourceMappingURL=pages.css.map */
