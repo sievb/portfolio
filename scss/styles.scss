@@ -1,0 +1,135 @@
+@import 'variables';
+@import 'baseStyles';
+
+#landing
+{
+    height: 75vh;
+    width: 100vw;
+    background-color: $bgColor;
+    color: $lightFont;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container
+{
+    max-width: 75%;
+
+    h1
+    {
+        font-weight: normal;
+        margin-bottom: 10%;
+    }
+
+    h3
+    {
+        font-size: 1.15rem;
+        font-weight: normal;
+    }
+}
+
+.portfolio
+{
+    a
+    {
+        &:link, &:visited
+        {
+            color: $darkFont;
+        }
+
+        &:active
+        {
+            color: $hoverColor;
+        }
+        
+        &:hover
+        {
+            .portfolioImage
+            {
+                filter: grayscale(0);
+            }
+        }
+    }
+}
+
+.portfolioItem
+{
+    margin: 20% 0;
+
+    @include tablet
+    {
+        margin: 10% 0;
+    }
+
+    a
+    {
+        @include desktop
+        {
+            display: flex;
+            margin: 10% 2.5% 10% 10%;
+        }
+    }
+}
+
+.portfolioImage
+{
+    margin: 0 auto;
+    width: 100%;
+    max-width: $phone;
+    height: 35vh;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+
+    @include tablet
+    {
+        width: 80%;
+        max-width: $desktop;
+        height: 50vh;
+    }
+
+    @include desktop
+    {
+        margin: 0;
+        width: 35%;
+        height: 40vh;
+        filter: grayscale(60%);
+    }
+}
+
+.portfolioInfo
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5%;
+
+    @include tablet
+    {
+        margin-top: 0;
+    }
+
+    h1
+    {
+        font-size: 1.5rem;
+
+        @include desktop
+        {
+            margin-left: 7.5%;
+        }
+    }
+
+    p
+    {
+        margin-left: 15%;
+    }
+
+    @include desktop
+    {
+        width: 25%;
+        text-align: initial;
+    }
+}

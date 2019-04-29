@@ -1,46 +1,74 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benjamin Siev | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/fontawesome/fontawesome-all.min.css">
-  </head>
-  <body>
-      <div id='navbar' class='nav'>
-        <a href="javascript:void(0);" class="icon" onclick="showNav()">
-          <i class="fa fa-bars fa-lg"></i>
-        </a>
-        <a href="http://benjaminsiev.me/">Home</a>
-        <a href="http://benjaminsiev.me/about.html">About</a>
-      </div>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Benjamin Siev</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
 
-      <div class="nameDiv">
-        <h1>Benjamin Siev</h1>
-        <h2>Aspiring UX/UI Designer</h2>
-        <h4><a href='http://benjaminsiev.me/about.html' class='animsition-link'>learn about me</a></h4>
-      </div>
+    <body>
+        <nav id="nav">
+            <a href="javascript:void(0)" class="closeButton" onclick="closeNav()">&#215;</a>
 
-      <div class="portfolio">
-        <p><a href='http://benjaminsiev.me/projects/delete.html'>Full-stack website</a> for visitors to learn good online habits | Objective-C development on a group project about autism awareness (Page coming soon!) | <a href='http://benjaminsiev.me/projects/zoldo.html'>Art asset design</a> for an absurdist Unity game | Bloodworks Northwest online training platform <a href='http://benjaminsiev.me/projects/bloodworks.html'>UI concept design</a> | Promoting campus interaction through a mobile AR game using <a href='http://benjaminsiev.me/projects/husky.html'>JavaScript and Google Maps API</a></p>
-      </div>
+            <div>
+                <a href="#">Home</a>
+                <a href="#">Work</a>
+                <a href="#">About</a>
+                <a href="mailto:benjaminsiev@gmail.com"><i class="fa fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </nav>
+    
+        <nav class="mobileNav">
+            <span onclick="openNav()">MENU</span>
+        </nav>
 
-      <div class="footer">
-        <h3 class='caption'>&uarr; Go ahead, click on one of those.</h3>
+        <section id="landing">
+            <div class="container">
+                <h1>Benjamin Siev</h1>
+                <h3>A designer interested in connecting humans and technology</h3>
+            </div>
+        </section>
 
-          <div>
-            <h4>Email</h4>
-            <a href="mailto:benjaminsiev@gmail.com"><span class='smallCaps'>benjaminsiev@gmail.com</span></a>
-          </div>
+        <section class="portfolio">
+                <div class="portfolioItem">
+                    <a href="#">
+                        <div class="portfolioImage"></div>
+                        
+                        <div class="portfolioInfo">
+                            <h1>Delete Yourself</h1>
+                            <p>ui/ux designer, web developer</p>
+                        </div>
+                    </a>
+                </div>
 
-          <div>
-            <h4>LinkedIn</h4>
-            <a href="https://www.linkedin.com/in/benjamin-siev"><span class='smallCaps'>/in/benjamin-siev</span></a>
-          </div>
-      </div>
-  </body>
-  <script src='js/jquery-3.3.1.min.js'></script>
-  <script src='js/index.js'></script>
+                <div class="portfolioItem">
+                    <a href="#">
+                        <div class="portfolioImage"></div>
+    
+                        <div class="portfolioInfo">
+                            <h1>Bloodworks Northwest</h1>
+                            <p>ui design</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolioItem">
+                    <a href="#">
+                        <div class="portfolioImage"></div>
+    
+                        <div class="portfolioInfo">
+                            <h1>journi</h1>
+                            <p>ux research/design</p>
+                        </div>
+                    </a>
+                </div>
+        </section>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 </html>

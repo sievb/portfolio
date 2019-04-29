@@ -1,33 +1,36 @@
-$(document).ready(function() {
-  $(".animsition").animsition({
-    inClass: 'fade-in',
-    outClass: 'fade-out',
-    inDuration: 1500,
-    outDuration: 800,
-    linkElement: '.animsition-link',
-    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-    loading: true,
-    loadingParentElement: 'body', //animsition wrapper element
-    loadingClass: 'animsition-loading',
-    loadingInner: '', // e.g '<img src="loading.svg" />'
-    timeout: false,
-    timeoutCountdown: 5000,
-    onLoadEvent: true,
-    browser: [ 'animation-duration', '-webkit-animation-duration'],
-    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    overlay : false,
-    overlayClass : 'animsition-overlay-slide',
-    overlayParentElement : 'body',
-    transition: function(url){ window.location.href = url; }
-  });
-});
+var thumbnailArray = $('.portfolioImage');
+var thumbnailImageArray = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg'];
 
-function showNav() {
-var x = document.getElementById("navbar");
-if (x.className === "nav") {
-  x.className += " responsive";
-} else {
-  x.className = "nav";
+var itemArray = $('.portfolioItem a');
+
+$(document).ready(function() {
+    for (i=0; i < thumbnailArray.length; i++) {
+        thumbnailArray.eq(i).css("background-image", `url("../img/${thumbnailImageArray[i]}")`);
+    }
+
+    for (i=1; i < itemArray.length; i+=2) {
+        itemArray.eq(i).css("justify-content", "flex-end");
+    }
+
+    switch (window.location.pathname.split('.').shift()) {
+        case '/delete':
+            $(".projectImage").css("background-image", 'url("../img/pic1.jpg")');
+            break;
+
+        case '/bloodworks':
+            $(".projectImage").css("background-image", 'url("../img/pic2.jpg")');
+            break;
+
+        case '/journi':
+            $(".projectImage").css("background-image", 'url("../img/pic3.jpg")');
+            break;
+    }
+})
+
+function openNav() {
+    document.getElementById("nav").style.height = "100%";
 }
+
+function closeNav() {
+    document.getElementById("nav").style.height = "0%";
 }
