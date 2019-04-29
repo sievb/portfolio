@@ -14,32 +14,32 @@ h1, h2, h3, h4, h5, h6
 
 h1
 {
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 h2
 {
-    font-size: 1.75rem;
+    font-size: 1.75em;
 }
 
 h3
 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 h4
 {
-    font-size: 1.25rem;
+    font-size: 1.25em;
 }
 
 h5
 {
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 h6
 {
-    font-size: 0.75rem;
+    font-size: 0.75em;
 }
 
 a
@@ -93,14 +93,14 @@ a
     {
         text-align: center;
         margin: 25% 0;
-        font-size: 2rem;
+        font-size: 2em;
         color: $lightFont;
         display: block;
         transition: 0.3s;
 
         @include tablet
         {
-            font-size: 0.75rem;
+            font-size: 0.75em;
             display: inline-block;
             color: $linkColor;
             margin: 0;
@@ -121,7 +121,7 @@ a
         position: absolute;
         bottom: 2%;
         left: 5%;
-        font-size: 3rem;
+        font-size: 3em;
         color: $lightFont;
 
         @include tablet

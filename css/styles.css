@@ -27,22 +27,22 @@ h1, h2, h3, h4, h5, h6 {
   margin: 2.5% 0; }
 
 h1 {
-  font-size: 2rem; }
+  font-size: 2em; }
 
 h2 {
-  font-size: 1.75rem; }
+  font-size: 1.75em; }
 
 h3 {
-  font-size: 1.5rem; }
+  font-size: 1.5em; }
 
 h4 {
-  font-size: 1.25rem; }
+  font-size: 1.25em; }
 
 h5 {
-  font-size: 1rem; }
+  font-size: 1em; }
 
 h6 {
-  font-size: 0.75rem; }
+  font-size: 0.75em; }
 
 a {
   text-decoration: none;
@@ -80,13 +80,13 @@ a {
   #nav div a {
     text-align: center;
     margin: 25% 0;
-    font-size: 2rem;
+    font-size: 2em;
     color: #fff;
     display: block;
     transition: 0.3s; }
     @media screen and (min-width: 426px) {
       #nav div a {
-        font-size: 0.75rem;
+        font-size: 0.75em;
         display: inline-block;
         color: #8a8a8a;
         margin: 0; } }
@@ -97,7 +97,7 @@ a {
     position: absolute;
     bottom: 2%;
     left: 5%;
-    font-size: 3rem;
+    font-size: 3em;
     color: #fff; }
     @media screen and (min-width: 426px) {
       #nav .closeButton {
@@ -121,6 +121,10 @@ a {
   .mobileNav a {
     color: #000; }
 
+@media screen and (min-width: 769px) {
+  body {
+    font-size: 14px; } }
+
 #landing {
   height: 75vh;
   width: 100vw;
@@ -136,7 +140,7 @@ a {
     font-weight: normal;
     margin-bottom: 10%; }
   .container h3 {
-    font-size: 1.15rem;
+    font-size: 1.15em;
     font-weight: normal; }
 
 .portfolio a:link, .portfolio a:visited {
@@ -187,7 +191,7 @@ a {
     .portfolioInfo {
       margin-top: 0; } }
   .portfolioInfo h1 {
-    font-size: 1.5rem; }
+    font-size: 1.5em; }
     @media screen and (min-width: 769px) {
       .portfolioInfo h1 {
         margin-left: 7.5%; } }
