@@ -91,10 +91,8 @@ a {
         color: #8a8a8a;
         margin: 0; } }
     @media screen and (min-width: 769px) {
-      #nav div a {
-        font-size: 0.5rem; }
-        #nav div a:hover {
-          color: #c4c4c4; } }
+      #nav div a:hover {
+        color: #c4c4c4; } }
   #nav .closeButton {
     position: absolute;
     bottom: 2%;
