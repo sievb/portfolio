@@ -27,22 +27,22 @@ h1, h2, h3, h4, h5, h6 {
   margin: 2.5% 0; }
 
 h1 {
-  font-size: 1.75rem; }
+  font-size: 2rem; }
 
 h2 {
-  font-size: 1.5rem; }
+  font-size: 1.75rem; }
 
 h3 {
-  font-size: 1.25rem; }
+  font-size: 1.5rem; }
 
 h4 {
-  font-size: 1rem; }
+  font-size: 1.25rem; }
 
 h5 {
-  font-size: 0.75rem; }
+  font-size: 1rem; }
 
 h6 {
-  font-size: 0.5rem; }
+  font-size: 0.75rem; }
 
 a {
   text-decoration: none;
@@ -212,12 +212,14 @@ p {
           flex-direction: column;
           width: 60%; } }
   .projectDetails h1 {
-    font-size: 1em;
+    font-size: 1.25em;
     color: #696969; }
   .projectDetails h2 {
-    font-size: 1.25em; }
+    font-size: 1.75em; }
   .projectDetails a {
     text-decoration: underline; }
+  .projectDetails p {
+    font-size: 1.25em; }
   .projectDetails img {
     width: 100%;
     height: auto;
@@ -256,6 +258,9 @@ footer {
 .projectList {
   margin: 2.5% 5%;
   flex-direction: column; }
+  @media screen and (min-width: 426px) {
+    .projectList {
+      margin: 2.5% 10%; } }
   @media screen and (min-width: 769px) {
     .projectList {
       margin: 0; } }

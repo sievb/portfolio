@@ -124,7 +124,11 @@
 
     p
     {
-        margin-left: 15%;
+
+        @include desktop
+        {
+            margin-left: 15%;
+        }
     }
 
     @include desktop

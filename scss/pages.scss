@@ -149,18 +149,23 @@ p
 
     h1
     {
-        font-size: 1em;
+        font-size: 1.25em;
         color: $darkGrayFont;
     }
 
     h2
     {
-        font-size: 1.25em;
+        font-size: 1.75em;
     }
 
     a
     {
         text-decoration: underline;
+    }
+
+    p
+    {
+        font-size: 1.25em;
     }
 
     img
@@ -226,6 +231,11 @@ footer
 {
     margin: 2.5% 5%;
     flex-direction: column;
+
+    @include tablet
+    {
+        margin: 2.5% 10%;
+    }
 
     @include desktop
     {
