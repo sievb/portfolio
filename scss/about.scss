@@ -93,10 +93,13 @@ img
     }
 }
 
-li
+.skills
 {
-    list-style-type: none;
-    display: inline-block;
-    border: 2px solid #dd33ff;
-    padding: 2%;
+    p
+    {
+        display: inline-block;
+        background-color: #f7f7f7;
+        padding: 2%;
+        margin-top: 0;
+    }
 }

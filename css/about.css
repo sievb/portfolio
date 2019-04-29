@@ -178,10 +178,10 @@ img {
   .selfDesc {
     margin-left: 45%; } }
 
-li {
-  list-style-type: none;
+.skills p {
   display: inline-block;
-  border: 2px solid #dd33ff;
-  padding: 2%; }
+  background-color: #f7f7f7;
+  padding: 2%;
+  margin-top: 0; }
 
 /*# sourceMappingURL=about.css.map */
