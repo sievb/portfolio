@@ -1,56 +1,71 @@
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../fonts/openSans/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../fonts/openSans/OpenSans-Italic.ttf") format("truetype");
   font-weight: normal;
-  font-style: italic; }
+  font-style: italic;
+}
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../fonts/openSans/OpenSans-Bold.ttf") format("truetype");
   font-weight: bold;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
   src: url("../fonts/sourceCodePro/SourceCodePro-Regular.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
-  color: #000; }
+  color: #000;
+}
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 2.5% 0; }
+  margin: 2.5% 0;
+}
 
 h1 {
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 h2 {
-  font-size: 1.75em; }
+  font-size: 1.75em;
+}
 
 h3 {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+}
 
 h4 {
-  font-size: 1.25em; }
+  font-size: 1.25em;
+}
 
 h5 {
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 h6 {
-  font-size: 0.75em; }
+  font-size: 0.75em;
+}
 
 a {
   text-decoration: none;
-  transition: 0.3s; }
-  a:link, a:visited {
-    color: #000; }
-  a:hover, a:active {
-    color: #c4c4c4; }
+  transition: 0.3s;
+}
+a:link, a:visited {
+  color: #000;
+}
+a:hover, a:active {
+  color: #c4c4c4;
+}
 
 #nav {
   height: 0;
@@ -64,44 +79,57 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; }
-  @media screen and (min-width: 426px) {
-    #nav {
-      position: fixed;
-      height: 100vh;
-      width: 7.5vw;
-      background-color: transparent;
-      text-orientation: upright;
-      writing-mode: vertical-lr;
-      text-transform: uppercase; } }
-  @media screen and (min-width: 769px) {
-    #nav {
-      width: 5vw; } }
+  overflow: hidden;
+}
+@media screen and (min-width: 426px) {
+  #nav {
+    position: fixed;
+    height: 100vh;
+    width: 7.5vw;
+    background-color: transparent;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    text-transform: uppercase;
+  }
+}
+@media screen and (min-width: 769px) {
+  #nav {
+    width: 5vw;
+  }
+}
+#nav div a {
+  text-align: center;
+  margin: 25% 0;
+  font-size: 2rem;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+@media screen and (min-width: 426px) {
   #nav div a {
-    text-align: center;
-    margin: 25% 0;
-    font-size: 2rem;
-    color: #fff;
-    display: block;
-    transition: 0.3s; }
-    @media screen and (min-width: 426px) {
-      #nav div a {
-        font-size: 0.75rem;
-        display: inline-block;
-        color: #8a8a8a;
-        margin: 0; } }
-    @media screen and (min-width: 769px) {
-      #nav div a:hover {
-        color: #c4c4c4; } }
+    font-size: 0.75rem;
+    display: inline-block;
+    color: #8a8a8a;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 769px) {
+  #nav div a:hover {
+    color: #c4c4c4;
+  }
+}
+#nav .closeButton {
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
+  font-size: 3em;
+  color: #fff;
+}
+@media screen and (min-width: 426px) {
   #nav .closeButton {
-    position: absolute;
-    bottom: 2%;
-    left: 5%;
-    font-size: 3em;
-    color: #fff; }
-    @media screen and (min-width: 426px) {
-      #nav .closeButton {
-        display: none; } }
+    display: none;
+  }
+}
 
 .mobileNav {
   position: fixed;
@@ -109,31 +137,44 @@ a {
   padding: 3%;
   background-color: #fff;
   box-shadow: 0px 0px 5px 0px #16161618;
-  z-index: 1; }
-  @media screen and (min-width: 426px) {
-    .mobileNav {
-      display: none; } }
-  .mobileNav span {
-    font-family: "Source Code Pro", serif;
-    font-weight: bold; }
-    .mobileNav span:hover {
-      cursor: pointer; }
-  .mobileNav a {
-    color: #000; }
+  z-index: 1;
+}
+@media screen and (min-width: 426px) {
+  .mobileNav {
+    display: none;
+  }
+}
+.mobileNav span {
+  font-family: "Source Code Pro", serif;
+  font-weight: bold;
+}
+.mobileNav span:hover {
+  cursor: pointer;
+}
+.mobileNav a {
+  color: #000;
+}
 
 @media screen and (min-width: 769px) {
   body {
-    font-size: 16px; } }
+    font-size: 16px;
+  }
+}
 
 @media screen and (min-width: 426px) {
   h1, h2 {
-    margin: 1% 0; } }
+    margin: 1% 0;
+  }
+}
 
 p {
-  line-height: 160%; }
-  @media screen and (min-width: 769px) {
-    p {
-      line-height: 140%; } }
+  line-height: 160%;
+}
+@media screen and (min-width: 769px) {
+  p {
+    line-height: 140%;
+  }
+}
 
 #landing {
   height: 100%;
@@ -141,150 +182,212 @@ p {
   background-color: #161616;
   color: #fff;
   display: flex;
-  flex-direction: column; }
-  @media screen and (min-width: 769px) {
-    #landing {
-      flex-direction: row-reverse; } }
+  flex-direction: column;
+}
+@media screen and (min-width: 769px) {
+  #landing {
+    flex-direction: row-reverse;
+  }
+}
 
 .projectImage {
   width: 100%;
   height: 60vh;
   background-size: cover;
   background-position: center;
-  position: relative; }
-  @media screen and (min-width: 769px) {
-    .projectImage {
-      height: 100vh; } }
+  position: relative;
+}
+@media screen and (min-width: 769px) {
+  .projectImage {
+    height: 100vh;
+  }
+}
 
 .projectDesc {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 5%; }
-  @media screen and (min-width: 426px) {
-    .projectDesc {
-      margin: 5% 10%; } }
-  @media screen and (min-width: 769px) {
-    .projectDesc {
-      width: 60%;
-      margin-right: 5%;
-      margin-left: 15%;
-      align-content: space-evenly; } }
+  margin: 5%;
+}
+@media screen and (min-width: 426px) {
+  .projectDesc {
+    margin: 5% 10%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .projectDesc {
+    width: 60%;
+    margin-right: 5%;
+    margin-left: 15%;
+    align-content: space-evenly;
+  }
+}
+.projectDesc h1 {
+  font-size: 2em;
+  width: 100%;
+}
+@media screen and (min-width: 769px) {
   .projectDesc h1 {
-    font-size: 2em;
-    width: 100%; }
-    @media screen and (min-width: 769px) {
-      .projectDesc h1 {
-        font-size: 2.5em; } }
-  .projectDesc div {
-    display: inline-block;
-    width: 45%;
-    margin: 5% 0; }
-    .projectDesc div h1 {
-      text-transform: uppercase;
-      margin-bottom: 2.5%;
-      font-size: 1.15em;
-      color: #c0c0c0;
-      font-weight: normal; }
-    .projectDesc div p {
-      font-size: 1.25em; }
-    .projectDesc div:last-child {
-      width: 100%; }
+    font-size: 2.5em;
+  }
+}
+.projectDesc div {
+  display: inline-block;
+  width: 45%;
+  margin: 5% 0;
+}
+.projectDesc div h1 {
+  text-transform: uppercase;
+  margin-bottom: 2.5%;
+  font-size: 1.15em;
+  color: #c0c0c0;
+  font-weight: normal;
+}
+.projectDesc div p {
+  font-size: 1.25em;
+}
+.projectDesc div:last-child {
+  width: 100%;
+}
 
 .projectDetails {
   display: flex;
-  flex-direction: column; }
-  @media screen and (min-width: 426px) {
-    .projectDetails {
-      margin: 0 10%; } }
-  @media screen and (min-width: 769px) {
-    .projectDetails {
-      margin: 0 15%; } }
+  flex-direction: column;
+}
+@media screen and (min-width: 426px) {
+  .projectDetails {
+    margin: 0 10%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .projectDetails {
+    margin: 0 15%;
+  }
+}
+.projectDetails > div {
+  margin: 10% 5%;
+}
+@media screen and (min-width: 426px) {
   .projectDetails > div {
-    margin: 10% 5%; }
-    @media screen and (min-width: 426px) {
-      .projectDetails > div {
-        margin: 2.5% 0; } }
-    @media screen and (min-width: 769px) {
-      .projectDetails > div {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap; }
-        .projectDetails > div div {
-          flex-direction: column;
-          width: 60%; } }
-  .projectDetails h1 {
-    font-size: 1.25em;
-    color: #696969; }
-  .projectDetails h2 {
-    font-size: 1.5em; }
-  .projectDetails a {
-    text-decoration: underline; }
-  .projectDetails p {
-    font-size: 1.15em; }
+    margin: 2.5% 0;
+  }
+}
+@media screen and (min-width: 769px) {
+  .projectDetails > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .projectDetails > div:first-child {
+    margin-top: 5%;
+  }
+  .projectDetails > div div {
+    flex-direction: column;
+    width: 60%;
+  }
+}
+.projectDetails h1 {
+  font-size: 1.25em;
+  color: #696969;
+}
+.projectDetails h2 {
+  font-size: 1.5em;
+}
+.projectDetails a {
+  text-decoration: underline;
+}
+.projectDetails p {
+  font-size: 1.15em;
+}
+.projectDetails img {
+  width: 100%;
+  height: auto;
+  margin: 2.5% 0%;
+}
+@media screen and (min-width: 769px) {
   .projectDetails img {
-    width: 100%;
-    height: auto;
-    margin: 2.5% 0%; }
-    @media screen and (min-width: 769px) {
-      .projectDetails img {
-        width: 47.5%;
-        height: 47.5%; } }
+    width: 47.5%;
+    height: 47.5%;
+  }
+}
 
 .flexColumn {
-  flex-direction: column; }
-  .flexColumn h1 {
-    margin: 0; }
+  flex-direction: column;
+}
+.flexColumn h1 {
+  margin: 0;
+}
 
 .artifacts {
   justify-content: center !important;
-  margin: 0; }
+  margin: 0;
+}
 
 footer {
   margin: 2.5% 0;
   display: flex;
-  flex-direction: column-reverse; }
-  @media screen and (min-width: 769px) {
-    footer {
-      flex-direction: row;
-      align-items: center;
-      margin: 5% 15%; } }
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 769px) {
+  footer {
+    flex-direction: row;
+    align-items: center;
+    margin: 5% 15%;
+  }
+}
+footer > div {
+  display: flex;
+}
+@media screen and (min-width: 769px) {
   footer > div {
-    display: flex; }
-    @media screen and (min-width: 769px) {
-      footer > div {
-        width: 50%; } }
-    footer > div h1 {
-      font-size: 1.25em; }
+    width: 50%;
+  }
+}
+footer > div h1 {
+  font-size: 1.25em;
+}
 
 .projectList {
   margin: 2.5% 5%;
-  flex-direction: column; }
-  @media screen and (min-width: 426px) {
-    .projectList {
-      margin: 2.5% 10%; } }
-  @media screen and (min-width: 769px) {
-    .projectList {
-      margin: 0; } }
-  .projectList h1 {
-    text-decoration: underline; }
-  .projectList a {
-    display: block;
-    font-size: 1.1em;
-    margin: 2.5% 0; }
+  flex-direction: column;
+}
+@media screen and (min-width: 426px) {
+  .projectList {
+    margin: 2.5% 10%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .projectList {
+    margin: 0;
+  }
+}
+.projectList h1 {
+  text-decoration: underline;
+}
+.projectList a {
+  display: block;
+  font-size: 1.1em;
+  margin: 2.5% 0;
+}
 
 .nextLink {
-  display: flex; }
+  display: flex;
+}
+.nextLink img {
+  width: 50%;
+  height: 100%;
+}
+@media screen and (min-width: 769px) {
   .nextLink img {
-    width: 50%;
-    height: 100%; }
-    @media screen and (min-width: 769px) {
-      .nextLink img {
-        width: 65%; } }
-  .nextLink div {
-    margin: auto 2.5%; }
-  .nextLink p {
-    text-decoration: underline;
-    font-size: 1.15em; }
+    width: 65%;
+  }
+}
+.nextLink div {
+  margin: auto 2.5%;
+}
+.nextLink p {
+  text-decoration: underline;
+  font-size: 1.15em;
+}
 
 /*# sourceMappingURL=pages.css.map */

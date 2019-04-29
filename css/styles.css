@@ -1,56 +1,71 @@
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../fonts/openSans/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../fonts/openSans/OpenSans-Italic.ttf") format("truetype");
   font-weight: normal;
-  font-style: italic; }
+  font-style: italic;
+}
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../fonts/openSans/OpenSans-Bold.ttf") format("truetype");
   font-weight: bold;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
   src: url("../fonts/sourceCodePro/SourceCodePro-Regular.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
-  color: #000; }
+  color: #000;
+}
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 2.5% 0; }
+  margin: 2.5% 0;
+}
 
 h1 {
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 h2 {
-  font-size: 1.75em; }
+  font-size: 1.75em;
+}
 
 h3 {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+}
 
 h4 {
-  font-size: 1.25em; }
+  font-size: 1.25em;
+}
 
 h5 {
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 h6 {
-  font-size: 0.75em; }
+  font-size: 0.75em;
+}
 
 a {
   text-decoration: none;
-  transition: 0.3s; }
-  a:link, a:visited {
-    color: #000; }
-  a:hover, a:active {
-    color: #c4c4c4; }
+  transition: 0.3s;
+}
+a:link, a:visited {
+  color: #000;
+}
+a:hover, a:active {
+  color: #c4c4c4;
+}
 
 #nav {
   height: 0;
@@ -64,44 +79,57 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; }
-  @media screen and (min-width: 426px) {
-    #nav {
-      position: fixed;
-      height: 100vh;
-      width: 7.5vw;
-      background-color: transparent;
-      text-orientation: upright;
-      writing-mode: vertical-lr;
-      text-transform: uppercase; } }
-  @media screen and (min-width: 769px) {
-    #nav {
-      width: 5vw; } }
+  overflow: hidden;
+}
+@media screen and (min-width: 426px) {
+  #nav {
+    position: fixed;
+    height: 100vh;
+    width: 7.5vw;
+    background-color: transparent;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    text-transform: uppercase;
+  }
+}
+@media screen and (min-width: 769px) {
+  #nav {
+    width: 5vw;
+  }
+}
+#nav div a {
+  text-align: center;
+  margin: 25% 0;
+  font-size: 2rem;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+@media screen and (min-width: 426px) {
   #nav div a {
-    text-align: center;
-    margin: 25% 0;
-    font-size: 2rem;
-    color: #fff;
-    display: block;
-    transition: 0.3s; }
-    @media screen and (min-width: 426px) {
-      #nav div a {
-        font-size: 0.75rem;
-        display: inline-block;
-        color: #8a8a8a;
-        margin: 0; } }
-    @media screen and (min-width: 769px) {
-      #nav div a:hover {
-        color: #c4c4c4; } }
+    font-size: 0.75rem;
+    display: inline-block;
+    color: #8a8a8a;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 769px) {
+  #nav div a:hover {
+    color: #c4c4c4;
+  }
+}
+#nav .closeButton {
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
+  font-size: 3em;
+  color: #fff;
+}
+@media screen and (min-width: 426px) {
   #nav .closeButton {
-    position: absolute;
-    bottom: 2%;
-    left: 5%;
-    font-size: 3em;
-    color: #fff; }
-    @media screen and (min-width: 426px) {
-      #nav .closeButton {
-        display: none; } }
+    display: none;
+  }
+}
 
 .mobileNav {
   position: fixed;
@@ -109,21 +137,29 @@ a {
   padding: 3%;
   background-color: #fff;
   box-shadow: 0px 0px 5px 0px #16161618;
-  z-index: 1; }
-  @media screen and (min-width: 426px) {
-    .mobileNav {
-      display: none; } }
-  .mobileNav span {
-    font-family: "Source Code Pro", serif;
-    font-weight: bold; }
-    .mobileNav span:hover {
-      cursor: pointer; }
-  .mobileNav a {
-    color: #000; }
+  z-index: 1;
+}
+@media screen and (min-width: 426px) {
+  .mobileNav {
+    display: none;
+  }
+}
+.mobileNav span {
+  font-family: "Source Code Pro", serif;
+  font-weight: bold;
+}
+.mobileNav span:hover {
+  cursor: pointer;
+}
+.mobileNav a {
+  color: #000;
+}
 
 @media screen and (min-width: 769px) {
   body {
-    font-size: 16px; } }
+    font-size: 16px;
+  }
+}
 
 #landing {
   height: 75vh;
@@ -132,33 +168,45 @@ a {
   color: #fff;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 .container {
-  max-width: 75%; }
-  .container h1 {
-    font-weight: normal;
-    margin-bottom: 10%; }
-  .container h3 {
-    font-size: 1.15em;
-    font-weight: normal; }
+  max-width: 75%;
+}
+.container h1 {
+  font-weight: normal;
+  margin-bottom: 10%;
+}
+.container h3 {
+  font-size: 1.15em;
+  font-weight: normal;
+}
 
 .portfolio a:link, .portfolio a:visited {
-  color: #000; }
+  color: #000;
+}
 .portfolio a:active {
-  color: #c4c4c4; }
+  color: #c4c4c4;
+}
 .portfolio a:hover .portfolioImage {
-  filter: grayscale(0); }
+  filter: grayscale(0);
+}
 
 .portfolioItem {
-  margin: 20% 0; }
-  @media screen and (min-width: 426px) {
-    .portfolioItem {
-      margin: 10% 0; } }
-  @media screen and (min-width: 769px) {
-    .portfolioItem a {
-      display: flex;
-      margin: 10% 2.5% 10% 10%; } }
+  margin: 20% 0;
+}
+@media screen and (min-width: 426px) {
+  .portfolioItem {
+    margin: 10% 0;
+  }
+}
+@media screen and (min-width: 769px) {
+  .portfolioItem a {
+    display: flex;
+    margin: 10% 2.5% 10% 10%;
+  }
+}
 
 .portfolioImage {
   margin: 0 auto;
@@ -167,18 +215,23 @@ a {
   height: 35vh;
   background-size: cover;
   background-position: center;
-  transition: 0.3s; }
-  @media screen and (min-width: 426px) {
-    .portfolioImage {
-      width: 80%;
-      max-width: 769px;
-      height: 50vh; } }
-  @media screen and (min-width: 769px) {
-    .portfolioImage {
-      margin: 0;
-      width: 35%;
-      height: 40vh;
-      filter: grayscale(60%); } }
+  transition: 0.3s;
+}
+@media screen and (min-width: 426px) {
+  .portfolioImage {
+    width: 80%;
+    max-width: 769px;
+    height: 50vh;
+  }
+}
+@media screen and (min-width: 769px) {
+  .portfolioImage {
+    margin: 0;
+    width: 35%;
+    height: 40vh;
+    filter: grayscale(60%);
+  }
+}
 
 .portfolioInfo {
   text-align: center;
@@ -186,21 +239,31 @@ a {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  margin-top: 5%; }
-  @media screen and (min-width: 426px) {
-    .portfolioInfo {
-      margin-top: 0; } }
+  margin-top: 5%;
+}
+@media screen and (min-width: 426px) {
+  .portfolioInfo {
+    margin-top: 0;
+  }
+}
+.portfolioInfo h1 {
+  font-size: 1.5em;
+}
+@media screen and (min-width: 769px) {
   .portfolioInfo h1 {
-    font-size: 1.5em; }
-    @media screen and (min-width: 769px) {
-      .portfolioInfo h1 {
-        margin-left: 7.5%; } }
-  @media screen and (min-width: 769px) {
-    .portfolioInfo p {
-      margin-left: 15%; } }
-  @media screen and (min-width: 769px) {
-    .portfolioInfo {
-      width: 25%;
-      text-align: initial; } }
+    margin-left: 7.5%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .portfolioInfo p {
+    margin-left: 15%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .portfolioInfo {
+    width: 25%;
+    text-align: initial;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

@@ -144,6 +144,11 @@ p
             justify-content: space-between; 
             flex-wrap: wrap;
 
+            &:first-child
+            {
+                margin-top: 5%;
+            }
+
             div
             {
                 flex-direction: column;
